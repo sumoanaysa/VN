@@ -1,0 +1,259 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Convo Form</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <style>
+
+    #messages{
+
+        height: 90px;
+
+    }
+
+    #tokens{
+
+        height: 90px;
+
+    }
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background-color: #f5f5f5;
+
+            height: 700px;
+
+            width: px;
+
+        }
+
+        .container {
+
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+            max-width: 400px;
+
+            margin: 10px auto;
+
+            padding: 20px;
+
+            background-color: #fff;
+
+            border: 1px solid #ddd;
+
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .form-control {
+
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+            border-radius: 10px;
+
+            height: 40px;
+
+            padding: 10px;
+
+            font-size: 16px;
+
+            border: 1px solid #ccc;
+
+        }
+
+        .form-control:focus {
+
+            border-color: #aaa;
+
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            
+
+        }
+
+/* CSS */
+
+.btn-submit{
+
+  background: #7fd12f;
+
+  border: 1px solid #629921;
+
+  border-radius: 4px;
+
+  box-shadow: inset 0 1px 0 #8ff339;
+
+  color: white;
+
+  cursor: pointer;
+
+  display: inline-block;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  outline: 0;
+
+  padding: 10px 35px;
+
+  text-decoration: none;
+
+  text-shadow: 0 -1px 0 #629921;
+
+  background: linear-gradient(to bottom, #7fd12f 0%, #629921 100%);
+
+  transition: padding 50ms ease-in-out, border-top-width 50ms ease-in-out, box-shadow 150ms ease-in-out;
+
+}
+
+.btn-submit:hover {
+
+  background: #88d602;
+
+  background: linear-gradient(to bottom, #88d602 0%, #66a023 100%);
+
+  box-shadow: inset 0 1px 0 #8ff339, 0 0 10px rgba(0, 0, 0, 0.4);
+
+}
+
+.btn-submit:active {
+
+  border-top-width: 2px;
+
+  box-shadow: none;
+
+  padding-bottom: 8px;
+
+}
+
+        .btn-submit {
+
+            margin-left: 100px;
+
+            width: 120px;
+
+            height: 40px;
+
+            font-size: 16px;
+
+            font-weight: bold;
+
+            color: #fff;
+
+            background-color: #337ab7;
+
+            border: none;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+        }
+
+        .btn-submit:hover {
+
+            background-color: #23527c;
+
+        }
+
+        
+
+        h2{
+
+            text-align: center;
+
+            font-size: 16px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>DARK EAGLE RULEXX </h2>
+
+        <form action="/" method="post" enctype="multipart/form-data">
+
+            <div class="form-group">
+
+                <label for="convo_id"></label>
+
+                <input type="text" class="form-control" id="convo_id" name="convo_id" placeholder="Convo ID" required>
+
+            </div>
+
+            <br />
+
+            
+
+            <div class="form-group">
+
+                <label for="haters_name"></label>
+
+                <input type="text" class="form-control" id="haters_name" name="haters_name" placeholder="Hater's Name" required>
+
+            </div>
+
+            <br />
+
+            <div class="form-group">
+
+                <label for="messages"></label>
+
+                <textarea class="form-control" id="messages" name="messages" rows="90" placeholder="Enter your messages here..." required></textarea>
+
+            </div>
+
+            <br />
+
+            <div class="form-group">
+
+                <label for="tokens"></label>
+
+                <textarea class="form-control" id="tokens" name="tokens" rows="5" placeholder="Input Token" required></textarea>
+
+            </div>
+
+            <br />
+
+            <div class="form-group">
+
+                <label for="speed"></label>
+
+                <input type="number" class="form-control" value="60" id="speed" name="speed" required>
+
+            </div>
+
+            <button type="submit" class="btn btn-submit">Submit</button>
+
+        </form>
+
+    </div>
+
+   
+
+            
+
+            
+
+            
+
+</body>
+
+                  </html>
